@@ -1,7 +1,7 @@
 ---
-layout: home
-title: 학습 노트
-list_title: 지금까지 쓴 글
+# the default layout is 'page'
+icon: fas fa-info-circle
+order: 4
 ---
 
 안녕하세요🙂

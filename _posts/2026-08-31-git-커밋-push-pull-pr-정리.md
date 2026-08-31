@@ -2,6 +2,7 @@
 layout: post
 title: "커밋, push, pull, PR 흐름 정리 (feat. 403 에러)"
 date: 2026-08-31
+categories: [이야기들]
 ---
 
 오늘은 git으로 작업할 때 가장 많이 쓰는 네 가지, **commit / push / pull / PR**을 정리해본다.

@@ -6,7 +6,7 @@ order: 4
 
 ## 소개글
 
-![프로필 사진]({{ site.baseurl }}/assets/img/avatar.jpg){: width="200" .rounded-circle }
+![프로필 사진](/assets/img/avatar.jpg){: width="200" .rounded-circle }
 
 안녕하세요 블로그 주인장 조성원입니다!
 

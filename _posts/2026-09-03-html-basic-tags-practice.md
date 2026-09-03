@@ -51,26 +51,13 @@ categories: [이야기들]
 
 실제로 렌더링하면 아래처럼 표와 사진이 화면에 나타난다.
 
-<table>
-  <tr>
-    <th>항목</th>
-    <th>내용</th>
-  </tr>
-  <tr>
-    <td>생년월일</td>
-    <td>2002년 3월 16일</td>
-  </tr>
-  <tr>
-    <td>좋아하는 것</td>
-    <td>운동</td>
-  </tr>
-  <tr>
-    <td>목표</td>
-    <td>취업해서 남은 인생 즐기기</td>
-  </tr>
-</table>
+| 항목 | 내용 |
+|------|------|
+| 생년월일 | 2002년 3월 16일 |
+| 좋아하는 것 | 운동 |
+| 목표 | 취업해서 남은 인생 즐기기 |
 
-<img src="{{ site.baseurl }}/assets/img/id-photo.jpg" alt="실습 예시 이미지">
+![실습 예시 이미지]({{ site.baseurl }}/assets/img/id-photo.jpg)
 
 ## 느낀 점
 

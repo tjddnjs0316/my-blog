@@ -24,58 +24,61 @@ categories: [이야기들]
 
 ## 실습
 
-나는 표(table)와 미디어(media) 태그를 직접 사용해 실습 해보았다. 표는 말 그대로 표를 만들어보고, 미디어는 이미지·영상 등을 삽입하는 방식으로 연습했다. 이 부분을 표와 미디어 둘 다 함께 활용해서, 여권 신청서처럼 자기소개 표 옆에 증명사진이 붙는 형태로 자기소개서를 만들어 보았다.
+나는 표(table)와 미디어(media) 태그를 직접 사용해 실습 해보았다. 표는 말 그대로 표를 만들어보고, 미디어는 이미지·영상 등을 삽입하는 방식으로 연습했다. 이 부분을 표와 미디어 둘 다 함께 활용해서, 회원 이력서 양식처럼 왼쪽에 증명사진 칸이 있고 오른쪽에 정보가 채워지는 형태로 자기소개 표를 만들어 보았다.
 
 ```html
-<div style="display: flex; align-items: stretch; gap: 16px;">
-  <table>
-    <tr>
-      <td><strong>이름</strong></td>
-      <td>조성원</td>
-    </tr>
-    <tr>
-      <td><strong>생년월일</strong></td>
-      <td>2002년 3월 16일</td>
-    </tr>
-    <tr>
-      <td><strong>좋아하는 것</strong></td>
-      <td>운동</td>
-    </tr>
-    <tr>
-      <td><strong>목표</strong></td>
-      <td>취업하고 하고 싶은거 하면서 살기</td>
-    </tr>
-  </table>
+<p style="text-align: center; font-weight: bold; font-size: 1.15em;">자기소개</p>
 
-  <img src="/assets/img/id-photo.jpg" alt="증명사진" style="height: 100%; width: auto; object-fit: cover;">
-</div>
+<table style="border-collapse: collapse; width: 100%; max-width: 640px; margin: 0 auto; border: 3px double #888;">
+  <tr>
+    <td rowspan="3" style="width: 150px; border: 1px solid #888; text-align: center; vertical-align: middle;">
+      <img src="/assets/img/id-photo.jpg" alt="증명사진" style="width: 100%; height: 150px; object-fit: cover;">
+    </td>
+    <td style="border: 1px solid #888; padding: 8px 12px; width: 110px;"><strong>이름</strong></td>
+    <td style="border: 1px solid #888; padding: 8px 12px;">조성원</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #888; padding: 8px 12px;"><strong>생년월일</strong></td>
+    <td style="border: 1px solid #888; padding: 8px 12px;">2002년 3월 16일</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #888; padding: 8px 12px;"><strong>좋아하는 것</strong></td>
+    <td style="border: 1px solid #888; padding: 8px 12px;">운동</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #888; padding: 8px 12px;"><strong>목표</strong></td>
+    <td colspan="2" style="border: 1px solid #888; padding: 8px 12px;">취업하고 하고 싶은거 하면서 살기</td>
+  </tr>
+</table>
 ```
 
-실제로 렌더링하면 아래처럼 표와 사진이 여권 신청서처럼 나란히 화면에 나타난다.
+실제로 렌더링하면 아래처럼 왼쪽 사진 칸에 증명사진이 들어간 이력서 형태의 표가 나타난다.
 
-<div style="display: flex; align-items: stretch; gap: 16px;" markdown="1">
-<table>
+<p style="text-align: center; font-weight: bold; font-size: 1.15em;">자기소개</p>
+
+<table style="border-collapse: collapse; width: 100%; max-width: 640px; margin: 0 auto; border: 3px double #888;">
 <tr>
-<td><strong>이름</strong></td>
-<td>조성원</td>
+<td rowspan="3" style="width: 150px; border: 1px solid #888; text-align: center; vertical-align: middle;" markdown="1">
+
+![증명사진](/assets/img/id-photo.jpg){: style="width: 100%; height: 150px; object-fit: cover;" }
+
+</td>
+<td style="border: 1px solid #888; padding: 8px 12px; width: 110px;"><strong>이름</strong></td>
+<td style="border: 1px solid #888; padding: 8px 12px;">조성원</td>
 </tr>
 <tr>
-<td><strong>생년월일</strong></td>
-<td>2002년 3월 16일</td>
+<td style="border: 1px solid #888; padding: 8px 12px;"><strong>생년월일</strong></td>
+<td style="border: 1px solid #888; padding: 8px 12px;">2002년 3월 16일</td>
 </tr>
 <tr>
-<td><strong>좋아하는 것</strong></td>
-<td>운동</td>
+<td style="border: 1px solid #888; padding: 8px 12px;"><strong>좋아하는 것</strong></td>
+<td style="border: 1px solid #888; padding: 8px 12px;">운동</td>
 </tr>
 <tr>
-<td><strong>목표</strong></td>
-<td>취업하고 하고 싶은거 하면서 살기</td>
+<td style="border: 1px solid #888; padding: 8px 12px;"><strong>목표</strong></td>
+<td colspan="2" style="border: 1px solid #888; padding: 8px 12px;">취업하고 하고 싶은거 하면서 살기</td>
 </tr>
 </table>
-
-![증명사진](/assets/img/id-photo.jpg){: style="height: 100%; width: auto; object-fit: cover; border-radius: 4px;" }
-
-</div>
 
 ## 느낀 점
 

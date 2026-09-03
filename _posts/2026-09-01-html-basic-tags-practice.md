@@ -46,8 +46,8 @@ categories: [이야기들]
     <td style="border: 1px solid #888; padding: 8px 12px;">운동</td>
   </tr>
   <tr>
-    <td style="border: 1px solid #888; padding: 8px 12px;"><strong>목표</strong></td>
-    <td colspan="2" style="border: 1px solid #888; padding: 8px 12px;">취업하고 하고 싶은거 하면서 살기</td>
+    <td style="border: 1px solid #888; padding: 8px 12px;"><strong>인생 좌우명</strong></td>
+    <td colspan="2" style="border: 1px solid #888; padding: 8px 12px;">좋아하는 것을 하면 그게 곧 성공이다</td>
   </tr>
 </table>
 ```
@@ -82,7 +82,7 @@ categories: [이야기들]
 
 ## 느낀 점
 
-처음에는 태그마다 쓰이는 용어(속성 이름, 태그 이름)를 외우고 활용하는 게 조금 헷갈렸다. 하지만 각 태그가 어떤 "기본 틀" 안에서 동작하는지(여는 태그-속성-닫는 태그 구조)를 이해하고 나니 훨씬 수월해졌다.
+처음에는 태그마다 쓰이는 용어(속성 이름, 태그 이름)를 외우고 활용하는 게 조금 헷갈리고 어렵게 느껴졌다. 하지만 각 태그가 어떤 "기본 틀" 안에서 동작하는지(여는 태그-속성-닫는 태그 구조)를 이해하고 나니 훨씬 수월해졌다.
 
 ## 더 학습하면 좋은 개념
 

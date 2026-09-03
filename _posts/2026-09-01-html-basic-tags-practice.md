@@ -75,8 +75,8 @@ categories: [이야기들]
 <td style="border: 1px solid #888; padding: 8px 12px;">운동</td>
 </tr>
 <tr>
-<td style="border: 1px solid #888; padding: 8px 12px;"><strong>목표</strong></td>
-<td colspan="2" style="border: 1px solid #888; padding: 8px 12px;">취업하고 하고 싶은거 하면서 살기</td>
+<td style="border: 1px solid #888; padding: 8px 12px;"><strong>인생 좌우명</strong></td>
+<td colspan="2" style="border: 1px solid #888; padding: 8px 12px;">항상 웃으면서 긍정적으로 살자!</td>
 </tr>
 </table>
 

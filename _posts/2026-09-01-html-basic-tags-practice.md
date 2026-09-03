@@ -24,40 +24,58 @@ categories: [이야기들]
 
 ## 실습
 
-나는 표(table)와 미디어(media) 태그를 직접 사용해 실습 해보았다. 표는 말 그대로 표를 만들어보고, 미디어는 이미지·영상 등을 삽입하는 방식으로 연습했다. 이 부분을 표와 미디어 둘 다 함께 활용해 간단하게 자기소개서를 만들어 보았다.
+나는 표(table)와 미디어(media) 태그를 직접 사용해 실습 해보았다. 표는 말 그대로 표를 만들어보고, 미디어는 이미지·영상 등을 삽입하는 방식으로 연습했다. 이 부분을 표와 미디어 둘 다 함께 활용해서, 여권 신청서처럼 자기소개 표 옆에 증명사진이 붙는 형태로 자기소개서를 만들어 보았다.
 
 ```html
-<table>
-  <tr>
-    <th>항목</th>
-    <th>내용</th>
-  </tr>
-  <tr>
-    <td>생년월일</td>
-    <td>2002년 3월 16일</td>
-  </tr>
-  <tr>
-    <td>좋아하는 것</td>
-    <td>운동</td>
-  </tr>
-  <tr>
-    <td>목표</td>
-    <td>취업해서 남은 인생 즐기기</td>
-  </tr>
-</table>
+<div style="display: flex; align-items: stretch; gap: 16px;">
+  <table>
+    <tr>
+      <td><strong>이름</strong></td>
+      <td>조성원</td>
+    </tr>
+    <tr>
+      <td><strong>생년월일</strong></td>
+      <td>2002년 3월 16일</td>
+    </tr>
+    <tr>
+      <td><strong>좋아하는 것</strong></td>
+      <td>운동</td>
+    </tr>
+    <tr>
+      <td><strong>목표</strong></td>
+      <td>취업하고 하고 싶은거 하면서 살기</td>
+    </tr>
+  </table>
 
-<img src="/assets/img/id-photo.jpg" alt="실습 예시 이미지">
+  <img src="/assets/img/id-photo.jpg" alt="증명사진" style="height: 100%; width: auto; object-fit: cover;">
+</div>
 ```
 
-실제로 렌더링하면 아래처럼 표와 사진이 화면에 나타난다.
+실제로 렌더링하면 아래처럼 표와 사진이 여권 신청서처럼 나란히 화면에 나타난다.
 
-| 항목 | 내용 |
-|------|------|
-| 생년월일 | 2002년 3월 16일 |
-| 좋아하는 것 | 운동 |
-| 목표 | 취업해서 남은 인생 즐기기 |
+<div style="display: flex; align-items: stretch; gap: 16px;" markdown="1">
+<table>
+<tr>
+<td><strong>이름</strong></td>
+<td>조성원</td>
+</tr>
+<tr>
+<td><strong>생년월일</strong></td>
+<td>2002년 3월 16일</td>
+</tr>
+<tr>
+<td><strong>좋아하는 것</strong></td>
+<td>운동</td>
+</tr>
+<tr>
+<td><strong>목표</strong></td>
+<td>취업하고 하고 싶은거 하면서 살기</td>
+</tr>
+</table>
 
-![실습 예시 이미지](/assets/img/id-photo.jpg)
+![증명사진](/assets/img/id-photo.jpg){: style="height: 100%; width: auto; object-fit: cover; border-radius: 4px;" }
+
+</div>
 
 ## 느낀 점
 
